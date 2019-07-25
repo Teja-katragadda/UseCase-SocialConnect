@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="itemViewModel"
+            type="com.example.socialconnect.SocialConnectItemViewModel"></variable>
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:text="@{itemViewModel.name}"
+            android:textColor="@android:color/holo_blue_bright"
+            app:layout_constraintStart_toEndOf="@+id/icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/viberId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="viberId"
+            android:text="@{itemViewModel.viberId}"
+            android:textColor="@android:color/holo_green_dark"
+            app:layout_constraintLeft_toLeftOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="icon"
+            android:src="@drawable/ic_call"
+            app:layout_constraintLeft_toLeftOf="@+id/viberId"
+            app:layout_constraintTop_toBottomOf="@+id/viberId" />
+
+        <TextView
+            android:id="@+id/availabilityStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="availabilitystatus"
+            android:text="@{itemViewModel.availabilityStatus}"
+            app:layout_constraintLeft_toLeftOf="@+id/icon"
+            app:layout_constraintTop_toBottomOf="@+id/icon" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
