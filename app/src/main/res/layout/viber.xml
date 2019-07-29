@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="name"
+            android:textSize="20dp"
             android:text="@{itemViewModel.name}"
             android:textColor="@android:color/holo_blue_bright"
             app:layout_constraintStart_toEndOf="@+id/icon"
@@ -30,7 +31,6 @@
             android:layout_height="wrap_content"
             android:hint="viberId"
             android:text="@{itemViewModel.viberId}"
-            android:textColor="@android:color/holo_green_dark"
             app:layout_constraintLeft_toLeftOf="@+id/name"
             app:layout_constraintTop_toBottomOf="@+id/name" />
 
