@@ -24,6 +24,8 @@ public class SocialConnectApplication extends Application implements HasActivity
 
     }
 
+
+
     @Override
     public AndroidInjector<Activity> activityInjector() {
         return dispatchingAndroidInjector;
